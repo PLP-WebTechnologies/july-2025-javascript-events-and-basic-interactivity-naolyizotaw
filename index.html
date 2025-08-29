@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page</h1>
+            <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Event Handling Examples</h2>
+                <p>Hover over this card to see a color change, or click anywhere to see an alert!</p>
+            </section>
+
+            <section>
+                <h2>Interactive Elements</h2>
+                <div class="interactive-section">
+                    <div class="counter-container">
+                        <h3>Counter Game</h3>
+                        <div class="counter-value" id="counterValue">0</div>
+                        <div class="counter-buttons">
+                            <button class="btn btn-primary" id="incrementBtn">+</button>
+                            <button class="btn btn-primary" id="decrementBtn">-</button>
+                            <button class="btn btn-warning" id="resetBtn">Reset</button>
+                        </div>
+                    </div>
+
+                    <div class="faq-container">
+                        <h3>FAQ Section</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What is JavaScript? <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                JavaScript is a programming language that enables interactive web pages.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What are events in JavaScript? <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                Events are actions that happen in the browser, such as clicks, mouse movements, or key presses.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What is DOM manipulation? <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                DOM manipulation is the process of dynamically changing the content and structure of a web page.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-container">
+                        <h3>Dropdown Menu</h3>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Select an Option</button>
+                            <div class="dropdown-content">
+                                <a href="#">Option 1</a>
+                                <a href="#">Option 2</a>
+                                <a href="#">Option 3</a>
+                                <a href="#">Option 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-container">
+                <h2>Form Validation</h2>
+                <form id="validationForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+                        <div class="error-message" id="nameError">Please enter a valid name (at least 2 characters)</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Enter your password">
+                        <div class="error-message" id="passwordError">Password must be at least 8 characters with a number and uppercase letter</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" class="form-input" placeholder="Confirm your password">
+                        <div class="error-message" id="confirmPasswordError">Passwords do not match</div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Form</button>
+                    <div class="success-message" id="successMessage">Form submitted successfully!</div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Interactive Web Page Assignment &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
